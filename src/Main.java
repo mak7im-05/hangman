@@ -153,7 +153,7 @@ class Main {
             System.out.println("Это не буква, введите правильный символ!");
             s = scanner.next().toUpperCase().charAt(0);
         }
-       return s;
+        return s;
     }
 
     public static void checkGuessLetter(HashSet<Character> gameSet, HashSet<Character> userSet, char guessLetter) {
