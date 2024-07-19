@@ -87,6 +87,7 @@ class Main {
 
     public static final Scanner scanner = new Scanner(System.in);
     public static final Random rand = new Random();
+    public static boolean win = false;
     public static int mistakeCnt = 0;
     public static final String[] scaff = {"ZERO", "ONE", "TWO", "THREE", "FOUR", "FIVE", "SIX"};
 
@@ -109,6 +110,7 @@ class Main {
     public static void startGameRound() {
         System.out.println("Новый раунд!");
 
+        win = false;
         mistakeCnt = 0;
         String hiddenWord = generateNewHiddenWord();
         HashSet<Character> gameSet = createGameSet(hiddenWord); // множество символов загаданново слова
@@ -120,26 +122,22 @@ class Main {
 
     public static void startGameLoop(String hiddenWord, HashSet<Character> gameSet, HashSet<Character> userSet) {
         while (mistakeCnt != 6) {
-            System.out.println();
-
             char guessLetter = inputGuessLetter();
             checkGuessLetter(gameSet, userSet, guessLetter);
 
             printStateScaffold(userSet, hiddenWord);
-            if (checkStateGame(userSet, gameSet)) {
+            if (win) {
+                System.out.println("Победа!!!");
                 System.out.println("\nТы угадал загаданное слово:" + hiddenWord);
                 break;
             }
         }
-        if (!checkStateGame(userSet, gameSet)) {
+        if (!win) {
             System.out.println();
             System.out.println("Игра окончена!");
+            System.out.println("Ты проиграл!!!");
             System.out.println("Загаданное слово:" + hiddenWord);
         }
-    }
-
-    private static boolean checkStateGame(HashSet<Character> userSet, HashSet<Character> gameSet) {
-        return gameSet.hashCode() == userSet.hashCode();
     }
 
     private static void printStateScaffold(HashSet<Character> userSet, String hiddenWord) {
@@ -150,13 +148,19 @@ class Main {
 
     private static char inputGuessLetter() {
         System.out.println("Введите букву:");
-        return scanner.next().toUpperCase().charAt(0);
+        char s = scanner.next().toUpperCase().charAt(0);
+        while (!Character.isLetter(s)) {
+            System.out.println("Это не буква, введите правильный символ!");
+            s = scanner.next().toUpperCase().charAt(0);
+        }
+       return s;
     }
 
     public static void checkGuessLetter(HashSet<Character> gameSet, HashSet<Character> userSet, char guessLetter) {
-        if (gameSet.contains(guessLetter)) {
+        if (gameSet.contains(guessLetter) || userSet.contains(guessLetter)) {
             userSet.add(guessLetter);
         } else {
+            userSet.add(guessLetter);
             mistakeCnt++;
         }
     }
