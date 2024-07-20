@@ -73,7 +73,7 @@ class Main {
                         "    |   |\n" +
                         "    |   O\n" +
                         "    |  /|\\\n" +
-                        "    |\n" +
+                        "    |  /\n" +
                         "    |\n" +
                         "    =========";
             }
@@ -146,6 +146,7 @@ class Main {
             System.out.println("Игра окончена!");
             System.out.println("Ты проиграл!!!");
             System.out.println("Загаданное слово:" + hiddenWord);
+            System.out.println(Scaffold.valueOf(scaff[mistakeCnt]));
             return;
         }
         System.out.println(Scaffold.valueOf(scaff[mistakeCnt]));
