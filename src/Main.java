@@ -9,78 +9,85 @@ class Main {
         ZERO {
             @Override
             public String toString() {
-                return "     " + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 124;
+                return "    +---+\n" +
+                        "    |   |\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    =========";
             }
         },
         ONE {
             @Override
             public String toString() {
-                return "     " + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + "\n" +
-                        "    " + (char) 79 + "    " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 124;
+                return "    +---+\n" +
+                        "    |   |\n" +
+                        "    |   O\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    =========";
             }
         },
         TWO {
             @Override
             public String toString() {
-                return "     " + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + "\n" +
-                        "    " + (char) 79 + "    " + (char) 124 + "\n" +
-                        "    " + (char) 124 + "    " + (char) 124 + "\n" +
-                        "    " + (char) 124 + "    " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 124;
+                return "    +---+\n" +
+                        "    |   |\n" +
+                        "    |   O\n" +
+                        "    |   |\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    =========";
             }
         },
         THREE {
             @Override
             public String toString() {
-                return "     " + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + "\n" +
-                        "    " + (char) 79 + "    " + (char) 124 + "\n" +
-                        "  " + (char) 45 + (char) 45 + (char) 124 + "    " + (char) 124 + "\n" +
-                        "    " + (char) 124 + "    " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 124;
+                return "    +---+\n" +
+                        "    |   |\n" +
+                        "    |   O\n" +
+                        "    |  /|\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    =========";
             }
         },
         FOUR {
             @Override
             public String toString() {
-                return "     " + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + "\n" +
-                        "    " + (char) 79 + "    " + (char) 124 + "\n" +
-                        "  " + (char) 45 + (char) 45 + (char) 124 + (char) 45 + (char) 45 + "  " + (char) 124 + "\n" +
-                        "    " + (char) 124 + "    " + (char) 124 + "\n" +
-                        "         " + (char) 124 + "\n" +
-                        (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 124;
+                return "    +---+\n" +
+                        "    |   |\n" +
+                        "    |   O\n" +
+                        "    |  /|\\\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    =========";
             }
         },
         FIVE {
             @Override
             public String toString() {
-                return "     " + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + "\n" +
-                        "    " + (char) 79 + "    " + (char) 124 + "\n" +
-                        "  " + (char) 45 + (char) 45 + (char) 124 + (char) 45 + (char) 45 + "  " + (char) 124 + "\n" +
-                        "    " + (char) 124 + "    " + (char) 124 + "\n" +
-                        "   " + (char) 47 + "     " + (char) 124 + "\n" +
-                        (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 124;
+                return "    +---+\n" +
+                        "    |   |\n" +
+                        "    |   O\n" +
+                        "    |  /|\\\n" +
+                        "    |\n" +
+                        "    |\n" +
+                        "    =========";
             }
         },
         SIX {
             @Override
             public String toString() {
-                return "     " + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + "\n" +
-                        "    " + (char) 79 + "    " + (char) 124 + "\n" +
-                        "  " + (char) 45 + (char) 45 + (char) 124 + (char) 45 + (char) 45 + "  " + (char) 124 + "\n" +
-                        "    " + (char) 124 + "    " + (char) 124 + "\n" +
-                        "   " + (char) 47 + " " + (char) 92 + "   " + (char) 124 + "\n" +
-                        (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 95 + (char) 124;
+                return  "    +---+\n" +
+                        "    |   |\n" +
+                        "    |   O\n" +
+                        "    |  /|\\\n" +
+                        "    |  / \\\n" +
+                        "    |\n" +
+                        "    =========";
             }
         }
     }
@@ -121,28 +128,27 @@ class Main {
     }
 
     public static void startGameLoop(String hiddenWord, HashSet<Character> gameSet, HashSet<Character> userSet) {
-        while (mistakeCnt != 6) {
-            char guessLetter = inputGuessLetter();
-            checkGuessLetter(gameSet, userSet, guessLetter);
-
-            printStateScaffold(userSet, hiddenWord);
-            if (win) {
-                System.out.println("Победа!!!");
-                System.out.println("\nТы угадал загаданное слово:" + hiddenWord);
-                break;
-            }
+        while (mistakeCnt != 6 && !win) {
+            char guessLetter = inputGuessLetter(); // ввод пользователя
+            checkGuessLetter(gameSet, userSet, guessLetter); // проверка буквы
+            printStateGame(userSet, hiddenWord); // вывод состояния игры
         }
-        if (!win) {
+    }
+
+    private static void printStateGame(HashSet<Character> userSet, String hiddenWord) {
+        System.out.println("Слово:" + getCurrGuessedWord(userSet, hiddenWord));
+        if(win) {
+            System.out.println("Победа!!!");
+            System.out.println("\nТы угадал загаданное слово:" + hiddenWord);
+            return;
+        } else if (mistakeCnt == 6) {
             System.out.println();
             System.out.println("Игра окончена!");
             System.out.println("Ты проиграл!!!");
             System.out.println("Загаданное слово:" + hiddenWord);
+            return;
         }
-    }
-
-    private static void printStateScaffold(HashSet<Character> userSet, String hiddenWord) {
         System.out.println(Scaffold.valueOf(scaff[mistakeCnt]));
-        System.out.println("Слово:" + getCurrGuessedWord(userSet, hiddenWord));
         System.out.println("Ошибки:" + (6 - mistakeCnt));
     }
 
@@ -166,12 +172,14 @@ class Main {
     }
 
     private static String getCurrGuessedWord(HashSet<Character> userSet, String hiddenWord) {
+        win = true;
         StringBuilder s = new StringBuilder();
         for (int i = 0; i < hiddenWord.length(); i++) {
             if (userSet.contains(hiddenWord.charAt(i))) {
                 s.append(hiddenWord.charAt(i));
             } else {
                 s.append("*");
+                win = false;
             }
         }
         return s.toString();
